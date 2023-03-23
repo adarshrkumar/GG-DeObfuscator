@@ -100,7 +100,7 @@ function doActions(expected) {
     expected = expected.replace('%2F', '/')
   }
   /** @type {string} */
-  document.body.innerHTML = `The page that you were on was: <a href='${expected}'>${expected}</a>`
+  document.body.innerHTML = `The page that you were on was: <a href='https://minim.proxy.RockGamerAK.com/prox/?url=${expected}'>${expected}</a>`
   /** @type {string} */
   document.title = expected;
 };
