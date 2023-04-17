@@ -106,6 +106,10 @@ function doActions(expected) {
   while (expected.includes('%26')) {
     expected = expected.replace('%26', '&')
   }
+  while (expected.includes('%3A')) {
+    expected = expected.replace('%3A', ':')
+  }
+  
   /** @type {string} */
   document.body.innerHTML = `The page that you were on was: <a href='https://minim.proxy.RockGamerAK.com/prox/?url=${expected}'>${expected}</a>`
   /** @type {string} */
