@@ -109,6 +109,9 @@ function doActions(expected) {
   while (expected.includes('%3A')) {
     expected = expected.replace('%3A', ':')
   }
+  while (expected.includes('%40')) {
+    expected = expected.replace('%40', '@')
+  }
   
   /** @type {string} */
   document.body.innerHTML = `The page that you were on was: <a href='https://minim.proxy.RockGamerAK.com/prox/?url=${expected}'>${expected}</a>`
