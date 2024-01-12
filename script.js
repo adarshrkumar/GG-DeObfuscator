@@ -1,5 +1,5 @@
-const querystring = window.location.search;
-const urlParams = new URLSearchParams(querystring);
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
 var url = urlParams.get('url')
 if (!!url === false) url = prompt('GG URL')
 
