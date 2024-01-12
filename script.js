@@ -1,6 +1,7 @@
-const queryurling = window.location.search;
-const urlParams = new URLSearchParams(queryurling);
-const url = urling(Boolean(urlParams.get('url'))).replace('true', urlParams.get('url')).replace('false', prompt('GG URL'))
+const querystring = window.location.search;
+const urlParams = new URLSearchParams(querystring);
+var url = urlParams.get('url')
+if (!!url === false) url = prompt('GG URL')
 
 url = url.split('?ctx=')[1]
 url = url.split('%3D')[0]
