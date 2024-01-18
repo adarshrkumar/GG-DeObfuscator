@@ -12,5 +12,5 @@ url = decodeURIComponent(url)
 
 alert(url)
 
-document.body.innerHTML = `The page that you were on was: <a href='https://minim.proxy.RockGamerAK.com/prox/?url=${expected}'>${expected}</a>`
+document.body.innerHTML = `The page that you were on was: <a href='https://minim.proxy.RockGamerAK.com/prox/?url=${url}'>${url}</a>`
 document.title = expected;
