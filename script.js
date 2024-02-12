@@ -4,7 +4,7 @@ var url = urlParams.get('url')
 if (!!url === false) url = prompt('GG URL')
 
 url = url.split('?ctx=')[1]
-url = url.split('%3D')[0]
+url = url.split('&sum=')[0]
 url = atob(url)
 url = url.split('&ou=')[1]
 url = url.split('&rs=')[0]
