@@ -5,7 +5,7 @@ if (!!url === false) url = prompt('GG URL')
 
 url = url.split('?ctx=')[1]
 url = url.split('&sum=')[0]
-url = url.splice(0, -3)
+url = url.replace('%3D', '')
 url = atob(url)
 url = url.split('&ou=')[1]
 url = url.split('&rs=')[0]
