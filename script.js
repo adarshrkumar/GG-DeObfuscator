@@ -11,7 +11,9 @@ url = url.split('&ou=')[1]
 url = url.split('&rs=')[0]
 url = decodeURIComponent(url)
 
-alert(url)
+prompt('URL', url)
 
-document.body.innerHTML = `The page that you were on was: <a href='https://minim.proxy.RockGamerAK.com/prox/?url=${url}'>${url}</a>`
+var prxy = `https://contentcleanremovals.replit.app/url?url=${url}`
+
+document.body.innerHTML = `The page that you were on was: <a href="${prxy}">${url}</a>`
 document.title = expected;
