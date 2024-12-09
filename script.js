@@ -15,7 +15,7 @@ url = decodeURIComponent(url)
 
 prompt('URL', url)
 
-var prxy = `https://contentcleanremovals.replit.app/url?url=${url}`
+var prxy = `https://contentcleanremovals.onrender.com/url?url=${url}`
 
 document.body.innerHTML = `The page that you were on was: <a href="${prxy}">${url}</a>`
 document.title = expected;
